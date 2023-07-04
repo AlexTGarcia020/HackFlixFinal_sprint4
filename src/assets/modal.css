@@ -72,13 +72,14 @@
     width: 90%;
     max-width: 500px;
     max-height: 160% !important;
-    margin: 40px 40px 40px 30px;
+    margin: 20px 0;
+    backdrop-filter: blur(1px);
   }
 
   .modal-content {
-    margin-top: 20%;
+    margin-top: 40%;
     margin-bottom: 30%;
-    padding: 0px;
+    padding: 0 !important;
     padding-bottom: 0 !important;
   }
 
@@ -94,10 +95,14 @@
 
   .modal-info {
     text-align: center;
+    font-size: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
 
   .modal-title {
-    margin-top: 12px;
+    margin-top: 15px;
+    font-size: 15px
   }
 
   .modal-body::after {

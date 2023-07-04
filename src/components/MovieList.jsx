@@ -7,7 +7,6 @@ function MovieList({ filterRating }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [movies, setMovies] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
-  const [isLoading, setIsLoading] = useState(true);
 
   const handleMovieClick = (movie) => {
     setSelectedMovie(movie);
@@ -22,7 +21,6 @@ function MovieList({ filterRating }) {
   useEffect(() => {
     fetchMovies();
   }, [currentPage]);
-
 
   const fetchMovies = async () => {
     try {
@@ -53,7 +51,7 @@ function MovieList({ filterRating }) {
 
   const renderPageLinks = () => {
     const pageLinks = [];
-  
+
     for (let i = 1; i <= 3; i++) {
       pageLinks.push(
         <li className={`page-item ${currentPage === i ? 'active' : ''}`} key={i}>
@@ -63,32 +61,23 @@ function MovieList({ filterRating }) {
         </li>
       );
     }
-  
+
     return pageLinks;
   };
 
   return (
     <div>
-      {isLoading ? (
-        <div className="containere">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      ) : (
         <div className="card-container">
           {filteredMovies.map((movie) => (
-            <div className="card" onClick={() => handleMovieClick(movie)}>
-                <img className="card-poster" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
-                <h6 className='justify-content-center d-flex text-titles'>{movie.title}</h6>
-              </div>
-            ))}
-            {isModalOpen && (
-             <Modal movie={selectedMovie} onClose={handleCloseModal} />
-           )}
+            <div className="card" onClick={() => handleMovieClick(movie)} key={movie.id}>
+              <img className="card-poster" src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`} alt={movie.title} />
+              <h6 className='justify-content-center d-flex text-titles'>{movie.title}</h6>
+            </div>
+          ))}
+          {isModalOpen && (
+            <Modal movie={selectedMovie} onClose={handleCloseModal} />
+          )}
         </div>
-      )}
       <nav aria-label="Page navigation example" className='d-flex justify-content-center'>
         <ul className="pagination justify-content-end">
           <li className={`page-item item2 ${currentPage === 1 ? 'disabled' : ''}`}>
