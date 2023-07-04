@@ -9,10 +9,7 @@ function SobreNosotros() {
   return (
     <div className='container'>
       <Navbar/>
-      <div className='container-about'>
-        <div className="card-about m-4">
-
-        </div>
+      <div className='container-about ms-4'>
         <div class="card-team">
         <div class="card-info">
         <div class="card-avatar"><img src="AlexProfile.jpg" className='img-fluid img-team' alt="" /></div>

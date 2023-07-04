@@ -32,7 +32,6 @@ function App() {
                   <span className='RatingMargin'>
                     <RatingComponent onChange={handleRatingChange} />
                   </span>
-                  <span className='SpanRating'>& Más</span>
                 </p>
               </div>
               <MovieList filterRating={filterRating} />

@@ -5,3 +5,27 @@
 .fa-star {
     color: rgb(218, 218, 27);
   }
+
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating-stars {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.rating-star {
+  margin: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .rating-stars {
+    flex-direction: column !important;
+    align-items: center;
+  }
+}

@@ -4,21 +4,30 @@ body {
 background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
+
+.ratingdiv {
+  text-align: center;
+}
+
 .ParrafoRating {
-    display: flex;
-    align-items: center;
-  }
-  
-.SpanRating {
-    margin-left: auto;
-  }
+  color: #fff;
+  font-size: 16px;
+}
 
 .RatingMargin {
-    margin-right: 10px;
+  margin: 0 5px;
+}
+
+.SpanRating {
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .ParrafoRating {
+    font-size: 14px;
   }
 
   .ratingdiv {
-    z-index: 1;
-    position: relative;
-    top: -45px;
+    margin-bottom: 50px;
   }
+}

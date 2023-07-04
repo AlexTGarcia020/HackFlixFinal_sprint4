@@ -89,18 +89,7 @@
     margin: 0 !important;
   }
   
-  @media screen and (max-width: 768px) {
-    .inputbox {
-      width: 60%;
-      left: 53%;
-      transform: translateX(-50%);
-    }
-    
-    .inputbox input {
-      width: 100% !important;
-    }
-  }
-
+  
   .inputbox span {
     position: absolute;
     left: 0;
@@ -136,8 +125,8 @@
   .inputbox input:focus ~i {
     height: 44px;
   }
-
-
+  
+  
   #wifi-loader {
     --front-color: #ffffff;
     --back-color: #ffffff;
@@ -258,19 +247,19 @@
     0% {
       stroke-dashoffset: 25;
     }
-  
+    
     25% {
       stroke-dashoffset: 0;
     }
-  
+    
     65% {
       stroke-dashoffset: 301;
     }
-  
+    
     80% {
       stroke-dashoffset: 276;
     }
-  
+    
     100% {
       stroke-dashoffset: 276;
     }
@@ -280,19 +269,19 @@
     0% {
       stroke-dashoffset: 17;
     }
-  
+    
     25% {
       stroke-dashoffset: 0;
     }
-  
+    
     65% {
       stroke-dashoffset: 204;
     }
-  
+    
     80% {
       stroke-dashoffset: 187;
     }
-  
+    
     100% {
       stroke-dashoffset: 187;
     }
@@ -302,19 +291,19 @@
     0% {
       stroke-dashoffset: 9;
     }
-  
+    
     25% {
       stroke-dashoffset: 0;
     }
-  
+    
     65% {
       stroke-dashoffset: 106;
     }
-  
+    
     80% {
       stroke-dashoffset: 97;
     }
-  
+    
     100% {
       stroke-dashoffset: 97;
     }
@@ -324,13 +313,35 @@
     0% {
       clip-path: inset(0 100% 0 0);
     }
-  
+    
     50% {
       clip-path: inset(0);
     }
-  
+    
     100% {
       clip-path: inset(0 0 0 100%);
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    .inputbox {
+      width: 80%;
+      left: 55%;
+      transform: translateX(-50%);
+    }
+    
+    .inputbox input {
+      width: 100% !important;
+    }
+
+    .search-results {
+      margin-left: 10%;
+      margin-top: 30% !important;
+    }
+
+    .divLoader {
+      margin-left: -50px;
+    }
+
   }
    

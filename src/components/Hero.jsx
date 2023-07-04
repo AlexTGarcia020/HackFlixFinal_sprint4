@@ -3,10 +3,9 @@ import '../assets/hero.css';
 import Navbar from './Navbar';
 
 function Hero() {
-
   return (
     <div className='mb-4'>
-      <Navbar/>
+      <Navbar />
       <div className="image-container">
         <img src="Navbar.jpg" alt="Background Image" className="background-image" />
         <div className="custom-shape-divider-top-1688439065">

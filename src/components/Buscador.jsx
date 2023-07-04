@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/buscar.css';
+import Modal from './Modal';
 
 function Buscador() {
   const [searchTerm, setSearchTerm] = useState('');
   const [searchResults, setSearchResults] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [selectedMovie, setSelectedMovie] = useState(null);
 
   useEffect(() => {
     if (searchTerm) {
@@ -29,6 +31,14 @@ function Buscador() {
     }
 
     setIsLoading(false);
+  };
+
+  const handleMovieClick = (movie) => {
+    setSelectedMovie(movie);
+  };
+
+  const handleModalClose = () => {
+    setSelectedMovie(null);
   };
 
   return (
@@ -63,7 +73,11 @@ function Buscador() {
           <div>Loading...</div>
         ) : searchResults.length > 0 ? (
           searchResults.map((movie) => (
-            <Link key={movie.id} to={`/pelicula/${movie.id}`} className='search-result-link'>
+            <Link
+              className='search-result-link'
+              key={movie.id}
+              onClick={() => handleMovieClick(movie)}
+            >
               <div className="search-result rounded">
                 <img
                   className="search-result-poster"
@@ -75,9 +89,12 @@ function Buscador() {
             </Link>
           ))
         ) : (
-            searchTerm.length > 0 && <div className="text-white mb-2 texterror">No se encontraron películas con el título buscado.</div>
-          )}
+          searchTerm.length > 0 && <div className="text-white mb-2 texterror">No se encontraron películas con el título buscado.</div>
+        )}
       </div>
+      {selectedMovie && (
+        <Modal movie={selectedMovie} onClose={handleModalClose} />
+      )}
     </div>
   );
 }
