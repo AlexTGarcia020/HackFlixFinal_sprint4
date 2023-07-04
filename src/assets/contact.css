@@ -1,0 +1,117 @@
+.bodys {
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .image-containers {
+    position: relative;
+    top: -45px;
+    height: 108vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .background-images {
+    position: absolute;
+    display: inline-block !important;
+    top: -50px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 !important;
+    padding: 0 !important;
+    z-index: -9999;
+  }
+
+  .carde {
+    position: relative; 
+    top: -80% !important;
+    left: 66%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 320px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    padding: 32px;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .contented {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    color: #e8e8e8;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    z-index: 1 !important;
+  }
+  
+  .contented .heading {
+    font-weight: 700;
+    font-size: 32px;
+    z-index: 1 !important;
+  }
+  
+  .contented .para {
+    line-height: 1.5;
+  }
+  
+  .contented .btn {
+    color: #e8e8e8;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1 !important;
+  }
+  
+  .carde::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(-45deg, #574545 0%, #dba5bb 100%);
+    z-index: -1;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .carde:hover::before {
+    height: 100%;
+  }
+  
+  .carde:hover {
+    box-shadow: none;
+  }
+  
+  .carde:hover .btn {
+    color: #ffffff;
+    background: linear-gradient(-45deg, #574545 0%, #c892a8 100%);
+  }
+  
+  .contented .btn:hover {
+    outline: 2px solid #e8e8e8;
+    color: #e8e8e8;
+  }
+  
+  .contented .btn:active {
+    box-shadow: none;
+  }
+  
+  .para {
+    font-size: 23px;
+    font-weight: bolder;
+  }

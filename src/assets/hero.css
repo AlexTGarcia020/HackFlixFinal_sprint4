@@ -1,0 +1,126 @@
+.navbar {
+    background-color: transparent !important;
+    position: relative;
+    z-index: 2 !important;
+    padding: 0px;
+}
+
+@media (max-width: 12230px) {
+  .navbar-expand-lg {
+    flex-wrap: nowrap !important;
+  }
+}
+
+.navbar-custom {
+  background-color: #ffffff !important;
+}
+
+.navbar-toggler-custom {
+  border-color: #fff;
+}
+
+.nav-link-custom {
+  color: #fff;
+}
+
+.custom-shape-divider-top-1688439065 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1688439065 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 50px;
+}
+
+.custom-shape-divider-top-1688439065 .shape-fill {
+    fill: #207feb;
+}
+
+.image-container {
+        position: relative;
+        height: 580px !important;
+        z-index: 1;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+}
+
+.background-image {
+    position: absolute;
+    width: 100%;
+    height: calc(100%);
+    object-fit: cover !important; 
+  }
+
+.Hackflix {
+    color: white;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.Home {
+    color: rgb(255, 255, 255) !important;
+    font-weight: 400;
+    margin: 0px 40px 0px 0px
+}
+
+.textMain {
+    position: relative;
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+}
+
+.PMain {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    top: 150px;
+}
+
+.SecondP {
+    font-weight: bold;
+}
+
+button {
+    padding: 0.53em 3em;
+    margin: 10px 20px 0px 0px !important;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color:transparent;
+    border: none !important;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  button:hover {
+    background-color: transparent;
+    box-shadow: 0 0px 5px rgb(109, 18, 255);
+    color: #fff;
+    transform: translateY(-1px);
+  }
+  
+  button:active {
+    transform: translateY(-2px);
+  }
+
+  .buttonss {
+    margin-left: 240px !important;
+    width: 25% !important;
+    box-shadow: none !important;
+  }
+
+  
