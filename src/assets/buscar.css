@@ -29,7 +29,7 @@
   }
   
   .search-result {
-    width: 200px;
+    width: 300px;
     margin: 10px;
     text-align: center;
     text-decoration: none !important;
@@ -64,18 +64,18 @@
 
   .inputbox {
     position: relative;
-    width: 277px;
+    width: 300px;
     display: flex;
     justify-content: center;
     top: 5rem;
-    left: 43%;
+    left: 35rem;    
     margin-bottom: 8% !important;
     color: white !important;
   }
   
   .inputbox input {
     position: relative;
-    width: 20% !important;
+    width: 100% !important;
     padding: 20px 10px 10px;
     background: transparent;
     outline: none;
