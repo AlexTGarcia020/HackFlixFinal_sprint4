@@ -325,8 +325,8 @@
 
   @media screen and (max-width: 768px) {
     .inputbox {
-      width: 80%;
-      left: 55%;
+      width: 50%;
+      left: 54%;
       transform: translateX(-50%);
     }
     
@@ -345,3 +345,19 @@
 
   }
    
+  @media screen and (min-width: 769px) {
+    .inputbox {
+      position: relative;
+      width: 300px;
+      display: flex;
+      justify-content: center;
+      top: 5rem;
+      left: 52%; 
+      transform: translateX(-52%);
+      margin-bottom: 10rem !important;
+      color: white !important;
+    }
+
+  }
+   
+  
