@@ -41,13 +41,13 @@ nav {
   align-items: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
   
   header nav {
     position: relative;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 98%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -69,6 +69,16 @@ nav {
   nav {
     font-size: 1.5rem;
   }
+ 
+  .dividir-buttons {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .buttonss {
+    padding: 0 !important;
+    margin-right: 0px !important;
+  }
 }
 
   button:hover {
@@ -86,3 +96,4 @@ nav {
     width: 25% !important;
     box-shadow: none !important;
   }
+

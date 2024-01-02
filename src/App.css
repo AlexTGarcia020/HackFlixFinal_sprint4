@@ -1,8 +1,12 @@
+@import url(https://db.onlinewebfonts.com/c/05428692254b58ccb090358a3dfecfff?family=SofiaPro-Bold);
 
 body {
-  background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-}
+    min-height: 100vh !important;
+    font-family: "SofiaPro-Bold" !important;
+    overflow-x: hidden !important;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  }
 
 
 .ratingdiv {
@@ -29,5 +33,34 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 
   .ratingdiv {
     margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  /* tablets */
+  body {
+    font-size: 14px; 
+  }
+}
+
+/* móviles */
+@media only screen and (max-width: 767px) {
+  
+  .Redes {
+    gap: 20px;
+  }
+
+  h1 strong {
+    font-size: 25px !important;
+  }
+
+  .contentTextTwo {
+    max-width: 90% !important;
+  }
+  
+  .leading-tight {
+    max-width: 10%; 
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
   }
 }

@@ -1,0 +1,7 @@
+@import url(https://db.onlinewebfonts.com/c/05428692254b58ccb090358a3dfecfff?family=SofiaPro-Bold);
+
+body {
+    min-height: 100vh !important;
+    font-family: "SofiaPro-Bold" !important;
+    overflow-x: hidden !important;
+  }

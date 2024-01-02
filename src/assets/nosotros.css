@@ -6,112 +6,119 @@
   height: 100vh;
 }
 
-.container-about {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
 .img-team {
-  border-radius: 50%;
-  background-color: transparent !important;
-  color: transparent !important;
+  width: 187px;
+  height: 252px;
+  border-radius: 10px;  
+  object-fit: cover !important;
 }
 
-.card-about {
-  width: 200px;
-  height: 250px;
-  border: none;
+.card {
+  width: 190px;
+  height: 254px;
+  background: white;
   border-radius: 10px;
-  background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #2063ff 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #231f4f 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #23c3fd 0%, #bcf3f6 69%, #2539bd 70%, #16a9c3 100%);
-  background-blend-mode: normal, normal, screen, overlay, normal;
-  box-shadow: 0px 0px 10px 1px #000000;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ }
+ 
+ .shadow {
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+              0 0  0 2px rgb(190, 190, 190),
+              0.3em 0.3em 1em rgba(0,0,0,0.3);
+ }
+ 
+ 
+ @media only screen and (max-width: 767px) {
+
+  h1 strong {
+    font-size: 25px !important;
+  }
+
+  .contentTextTwo {
+    max-width: 90% !important;
+  }
+  
+  .leading-tight {
+    max-width: 10%; 
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+  }
 }
 
-.card-team {
-  width: 200px;
-  height: 250px;
-  border: none;
-  border-radius: 10px;
-  background: #069bc5;
-  padding: 2rem 1.5rem;
-  box-shadow: 0px 0px 10px 1px #000000;
-  transition: box-shadow .3s ease, transform .2s ease;
- }
- 
- .card-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: transform .2s ease, opacity .2s ease;
- }
- 
- /*Image*/
- .card-avatar {
-  --size: 60px;
-  background: linear-gradient(to top, #c1cff1 0%, #0195ff 100%);
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  transition: transform .2s ease;
-  margin-bottom: 1rem;
- }
- 
- 
- /*Card footer*/
- .card-social {
-  transform: translateY(200%);
-  display: flex;
-  justify-content: space-around;
-  width: 80%;
-  opacity: 0;
-  transition: transform .2s ease, opacity .2s ease;
- }
- 
- .card-social__item {
-  list-style: none;
- }
- 
- .card-social__item svg {
-  display: block;
-  height: 25px;
-  width: 25px;
-  fill: #ffffff;
-  cursor: pointer;
-  transition: fill 0.2s ease ,transform 0.2s ease;
- }
- 
- /*Text*/
- .card-title {
-  color: #ffffff;
-  font-size: 1.5em;
-  font-weight: 600;
-  line-height: 2rem;
- }
- 
- .card-subtitle {
-  color: #c5cfd5;
-  font-size: 0.8em;
-  font-weight: 600;
- }
- 
- 
- .card-team:hover .card-info {
-  transform: translateY(-5%);
- }
- 
- .card-team:hover .card-social {
-  transform: translateY(100%);
-  opacity: 1;
- }
- 
- .card-social__item svg:hover {
-  fill: #000000;
-  transform: scale(1.1);
- }
- 
- .card-avatar:hover {
-  transform: scale(1.1);
- }
+  .container {
+    text-align: center;
+  }
+  
+
+  
+  .text-container {
+    max-width: 700px;
+    margin-top: 40px !important;
+    margin: 0 auto; 
+  }
+  
+  
+  .text-secondary {
+    white-space: normal; 
+  }
+  
+  
+  @media only screen and (max-width: 1500px) {
+    .container{
+      padding: 0px !important;
+    }
+
+    .Redes {
+      gap: 20px;
+    }
+
+    h1 strong {
+      font-size: 25px !important;
+    }
+
+    .contentTextTwo {
+      max-width: 90% !important;
+    }
+    
+    .leading-tight {
+      max-width: 10%; 
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+    }
+
+    .tecnologias {
+      gap: 8px !important;
+      font-size: 35px !important;
+    }
+  }
+  
+
+  /* móviles */
+  @media only screen and (max-width: 767px) {
+    .container{
+      padding: 0px !important;
+    }
+
+    .Redes {
+      gap: 20px;
+    }
+
+    h1 strong {
+      font-size: 25px !important;
+    }
+
+    .contentTextTwo {
+      max-width: 90% !important;
+    }
+    
+    .leading-tight {
+      max-width: 10%; 
+      word-wrap: break-word !important;
+      overflow-wrap: break-word !important;
+    }
+
+    .tecnologias {
+      gap: 8px !important;
+      font-size: 35px !important;
+    }
+  }
